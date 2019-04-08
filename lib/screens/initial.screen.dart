@@ -1,4 +1,5 @@
 import 'package:bungie_api/models/user_membership_data.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:little_light/exceptions/exception_handler.dart';
@@ -40,9 +41,11 @@ class InitialScreenState extends FloatingContentState<InitialScreen> {
   bool forceReauth = false;
   @override
   void initState() {
+    if(debugDefaultTargetPlatformOverride != TargetPlatform.fuchsia){
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarBrightness: Brightness.dark));
+    }
     super.initState();
     checkLanguage();
   }

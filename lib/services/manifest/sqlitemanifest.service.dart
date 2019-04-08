@@ -17,7 +17,7 @@ import 'package:archive/archive.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart' as sqflite;
 
-class SQLManifestService extends BaseManifestService {
+class SQLiteManifestService extends BaseManifestService {
   final Map<String, dynamic> _cached = Map();
   static const String _manifestFilename = "manifest.db";
   sqflite.Database _db;

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:bungie_api/helpers/oauth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:little_light/services/auth/auth.service.dart';
@@ -28,6 +29,10 @@ class ExceptionHandler {
     if(_sentry != null) return;
     if(!DotEnv().env.containsKey('sentry_dsn')) return;
     
+    if(debugDefaultTargetPlatformOverride == TargetPlatform.fuchsia){
+      return;
+    }
+
     var info =  await PackageInfo.fromPlatform();
     _sentry = SentryClient(
     environmentAttributes: Event(

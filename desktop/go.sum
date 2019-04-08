@@ -12,6 +12,8 @@ github.com/go-flutter-desktop/plugins/shared_preferences v0.4.0 h1:Gf5ZDHNguav8q
 github.com/go-flutter-desktop/plugins/shared_preferences v0.4.0/go.mod h1:n2oMJAzrOAn0loUTH9lay2XEXcxsBmo0e+3EvwSCfko=
 github.com/go-gl/glfw v0.0.0-20190217072633-93b30450e032 h1:WUDJN6o1AZlnNR0UZ11zsr0Quh44CV7svcg6VzEsySc=
 github.com/go-gl/glfw v0.0.0-20190217072633-93b30450e032/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=
+github.com/go-gl/glfw v0.0.0-20190407132400-39f94f807590 h1:tjEtm8yDalv0h3u4bN/M8UZVLabXtHXVa4iq+GmqrTY=
+github.com/go-gl/glfw v0.0.0-20190407132400-39f94f807590/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db h1:woRePGFeVFfLKN/pOkfl+p/TAqKOfFu+7KPlMVpok/w=
 github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db/go.mod h1:/XxbfmMg8lxefKM7IXC3fBNl/7bRcc72aCRzEWrmP2Q=
